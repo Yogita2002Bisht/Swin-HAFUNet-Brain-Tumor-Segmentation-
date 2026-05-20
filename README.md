@@ -31,7 +31,7 @@ This repository presents **Swin-HAFUNet**, a hybrid Swin Transformer + U-Net arc
 
 The dashboard below shows all six training metrics across 63 epochs: Loss, Dice Score, IoU, Precision & Recall, Learning Rate schedule, and per-epoch wall-clock time (~1.37 min/epoch consistently).
 
-![All Metrics](results/all_metrics.png)
+
 
 ---
 
