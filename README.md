@@ -39,7 +39,7 @@ The dashboard below shows all six training metrics across 63 epochs: Loss, Dice 
 
 Both training and validation loss drop sharply in the first 5 epochs and converge smoothly. Final train loss ~0.045, val loss ~0.08 with no signs of overfitting.
 
-![Loss Curve](results/loss_curve.png)
+
 
 ---
 
@@ -47,7 +47,7 @@ Both training and validation loss drop sharply in the first 5 epochs and converg
 
 Training Dice climbs steadily to ~0.92. Validation Dice plateaus at ~0.87 from epoch 20 onward, indicating stable generalization.
 
-![Dice Curve](results/dice_curve.png)
+
 
 ---
 
@@ -55,7 +55,7 @@ Training Dice climbs steadily to ~0.92. Validation Dice plateaus at ~0.87 from e
 
 Validation IoU rises from 0.64 at epoch 1 to a stable ~0.80, consistent with the Dice trajectory.
 
-![IoU Curve](results/iou_curve.png)
+
 
 ---
 
@@ -63,7 +63,7 @@ Validation IoU rises from 0.64 at epoch 1 to a stable ~0.80, consistent with the
 
 Precision (magenta) stabilizes at ~0.90 and recall (cyan) at ~0.88 after the initial warm-up, showing balanced detection with a slight precision advantage.
 
-![Precision & Recall](results/precision_recall.png)
+
 
 ---
 
@@ -71,7 +71,7 @@ Precision (magenta) stabilizes at ~0.90 and recall (cyan) at ~0.88 after the ini
 
 Cosine annealing from 1.0 × 10⁻⁴ decaying smoothly to ~0.64 × 10⁻⁴ over 63 epochs.
 
-![LR Schedule](results/lr_schedule.png)
+
 
 ---
 
@@ -184,11 +184,6 @@ python inference.py --checkpoint ./outputs/best_model.pth \
 - [ ] Test-time augmentation (TTA)
 - [ ] Multi-scale attention gates in decoder skip connections
 - [ ] Extend to BraTS 2021/2023 datasets
-
----
-
-
-```
 
 ---
 
